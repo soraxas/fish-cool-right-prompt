@@ -2,7 +2,7 @@ function __print_ranger_level
   # Ranger indicator
   # ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓ
   # ⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ
-  if test -n "$RANGER_LEVEL"
+  if set -q RANGER_LEVEL
     # orange and white, from ranger's logo color
     # we will use no background and orange font
     set_color --bold df661c

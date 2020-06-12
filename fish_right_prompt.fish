@@ -13,7 +13,7 @@ end
 function fish_right_prompt
   # print ranger level with our helper function
   __print_ranger_level
-  if test -z "$last_pipestatus"
+  if not set -q last_pipestatus
     # pipe status not set!
     # Check if you have this at the beginning of the normal prompt
     # set -g last_pipestatus $pipestatus
