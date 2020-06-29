@@ -1,6 +1,6 @@
 
 # copy the current fish prompt, and wrap it to save pipe status
-functions -c fish_prompt __original_fish_prompt
+functions -q __original_fish_prompt || functions -c fish_prompt __original_fish_prompt
 # we limits outself on what we perform in this wrapped fish_prompt.
 # we won't modify $stats as we are only performing set (i.e. won't affect most prompt).
 # However, `set` would modify $pipestatus though
